@@ -15,9 +15,9 @@ def get_child_texts(driver, xpath):
 
 
 options = Options()
-options.add_argument("--headless")  # background
+options.add_argument("--headless")
 
-service = Service('C:/wdriver/chromedriver.exe')
+service = Service('/path/to/chromedrover/chromedriver.exe') #edit chrome driver location
 driver = webdriver.Chrome(service=service, options=options)
 
 driver.get("https://www.bursamarketplace.com/mkt/themarket")
