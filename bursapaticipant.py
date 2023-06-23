@@ -15,9 +15,9 @@ def get_child_texts(driver, xpath):
 
 
 options = Options()
-options.add_argument("--headless")
+options.add_argument("--headless")  # Run in headless mode without GUI
 
-service = Service('/path/to/chromedrover/chromedriver.exe') #edit chrome driver location
+service = Service('C:/path/to/chromedriver.exe') #edit here
 driver = webdriver.Chrome(service=service, options=options)
 
 driver.get("https://www.bursamarketplace.com/mkt/themarket")
@@ -34,8 +34,8 @@ def main():
     passfile = open('marketparticipant.txt', 'a')
     for x in range(1, 6):
         results = get_elem(x)
-        #print(" # ".join(results))
-        passfile.write('\r' + " # ".join(results))  
+        print(" -- ".join(results))
+        passfile.write('\r' + " -- ".join(results))  # Write the element's text followed by
     passfile.close()
 
 if __name__ == '__main__':
