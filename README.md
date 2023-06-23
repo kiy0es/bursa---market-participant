@@ -1,3 +1,3 @@
 # bursa---market-participant
-python code to scrap market participant in bursa
-edit path to webdriver before use.
+1.python code to scrap market participant in bursa
+2.edit path to webdriver before use.
