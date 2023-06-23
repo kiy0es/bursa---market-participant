@@ -34,8 +34,8 @@ def main():
     passfile = open('marketparticipant.txt', 'a')
     for x in range(1, 6):
         results = get_elem(x)
-        print(" -- ".join(results))
-        passfile.write('\r' + " -- ".join(results))  # Write the element's text followed by
+        print("#".join(results))
+        passfile.write('\r' + "#".join(results))  # Write the element's text followed by
     passfile.close()
 
 if __name__ == '__main__':
